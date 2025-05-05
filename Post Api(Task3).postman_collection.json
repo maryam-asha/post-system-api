@@ -1,0 +1,152 @@
+{
+	"info": {
+		"_postman_id": "906610ca-4c22-4d85-96d3-2b3e88b2391f",
+		"name": "Post Api(Task3)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27719666"
+	},
+	"item": [
+		{
+			"name": "posts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/posts",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "single post",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/posts",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post",
+			"request": {
+				"method": "POST",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-type",
+						"value": "multipart/form-data",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "New Post",
+							"type": "text"
+						},
+						{
+							"key": "slug",
+							"value": "new-post-8",
+							"type": "text"
+						},
+						{
+							"key": "body",
+							"value": " This is the content of the new post.",
+							"type": "text"
+						},
+						{
+							"key": "is_published",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "publish_date",
+							"value": "2025-05-08",
+							"type": "text"
+						},
+						{
+							"key": "meta_description",
+							"value": "A brief description of the post",
+							"type": "text"
+						},
+						{
+							"key": "tags[0]",
+							"value": "jhgjgj",
+							"type": "text"
+						},
+						{
+							"key": "tags[1]",
+							"value": "453534",
+							"type": "text"
+						},
+						{
+							"key": "keyword",
+							"value": "blog post",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/posts/3",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"posts",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
